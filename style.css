@@ -1,0 +1,94 @@
+.block {
+    width: 200px;
+    height: 100px;
+    border: black 2px solid;
+    margin: 20px auto;
+    background-image: url(mk.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+.block p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: greenyellow;
+
+}
+.block:nth-child(1) {
+    /* transition: 1s; */
+    /* transition-duration: 2s,4s,7s; */
+    /* transition-property: width,border-radius,background-color; */
+    /* transition-delay: 6s,4s,2s; */
+    transition-timing-function: ease-in-out;
+    transition-property: width;
+    transition-duration: 25s; 
+    animation-name: rotate;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+.block:nth-child(2) {
+    transition-timing-function: ease-in-out;
+    transition-property: width;
+    transition-duration: 20s;
+    animation-name: rotate;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+.block:nth-child(3) {
+    transition-timing-function: ease-in-out;
+    transition-property: width;
+    transition-duration: 15s;
+    animation-name: rotate;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+.block:nth-child(4) {
+    transition-timing-function: ease-in-out;
+    transition-property: width;
+    transition-duration: 10s;
+    animation-name: rotate;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+.block:nth-child(5) {
+    transition-timing-function: ease-in-out;
+    transition-property: width;
+    transition-duration: 5s;
+    animation-name: rotate;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+        border-radius: 0px;
+        transform: scale(2) rotate(-720deg) skew(-30deg) translateY(-50px) translatex(100px);
+    }
+    100%{
+        transform: rotate(360deg);
+        border-radius: 50%;
+    }
+.block:nth-child(1):hover{
+    width: 500px;
+}
+.block:nth-child(2):hover{
+    width: 500px;
+}
+.block:nth-child(3):hover{
+    width: 500px;
+}
+.block:nth-child(4):hover{
+    width: 500px;
+}
+.block:nth-child(5):hover{
+    width: 500px;
+}
+
+
+
+
+
+
+
+
